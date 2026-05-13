@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book a Consultation | Novara Interior</title>
+    <meta name="theme-color" content="#161616" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="Book your Novara Interior consultation and share the details of your design project."
+    />
+    <meta
+      name="keywords"
+      content="book interior design consultation, Novara Interior, interior styling inquiry, renovation consulting"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="booking-body">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html#top">Novara Interior</a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" id="site-nav">
+          <a href="index.html#top">Home</a>
+          <a href="index.html#contact">Contact</a>
+          <a class="button button-sm" href="booking.html">Book Now</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="booking-main">
+      <section class="booking-hero">
+        <div class="container booking-intro" data-reveal>
+          <p class="section-tag">Consultation Booking</p>
+          <h1>Tell us about your space</h1>
+          <p>
+            Share a few project details and Novara Interior will reach out to
+            plan your consultation.
+          </p>
+        </div>
+      </section>
+
+      <section class="section booking-section">
+        <div class="container booking-card" data-reveal>
+          <form
+            action="https://formspree.io/f/mojrbbqo"
+            method="POST"
+            class="booking-form"
+            data-booking-form
+          >
+            <div class="form-field">
+              <label for="full-name">Full Name</label>
+              <input
+                id="full-name"
+                name="fullName"
+                type="text"
+                placeholder="Your full name"
+                required
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="phone-number">Phone Number</label>
+              <input
+                id="phone-number"
+                name="phoneNumber"
+                type="tel"
+                placeholder="+234..."
+                required
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="email-address">Email Address</label>
+              <input
+                id="email-address"
+                name="email"
+                type="email"
+                placeholder="Optional email address"
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="project-description">Project Description</label>
+              <textarea
+                id="project-description"
+                name="projectDescription"
+                rows="6"
+                placeholder="Describe your space, style, and what support you need"
+                required
+              ></textarea>
+            </div>
+
+            <button class="button submit-button" type="submit">
+              <span class="button-text">Send Request</span>
+              <span class="button-loader" aria-hidden="true"></span>
+            </button>
+
+            <p class="form-status" data-form-status aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <div>
+          <p class="footer-brand">Novara Interior</p>
+          <p class="footer-copy">
+            &copy; <span data-year></span> Novara Interior. All rights reserved.
+          </p>
+        </div>
+        <div class="footer-socials">
+          <a
+            href="https://www.instagram.com/novara_interior"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="tel:+2348143965548" aria-label="Phone">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+          <a
+            href="https://wa.link/bl35ah"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="WhatsApp"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="success-modal" data-success-modal hidden>
+      <div class="success-modal__backdrop" data-success-close></div>
+      <div
+        class="success-modal__dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="success-title"
+        aria-describedby="success-message"
+        tabindex="-1"
+      >
+        <div class="success-modal__icon" aria-hidden="true">
+          <i class="fa-solid fa-check"></i>
+        </div>
+        <p class="section-tag">Submission Successful</p>
+        <h2 id="success-title">Request received</h2>
+        <p id="success-message">
+          Your request has been received. We'll contact you shortly.
+        </p>
+        <button class="button success-modal__button" type="button" data-success-close>
+          Continue
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
