@@ -226,8 +226,7 @@ p {
   align-items: center;
   background:
     linear-gradient(rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.62)),
-    url("https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80")
-      center/cover no-repeat;
+    url("novint1.jpeg") center/cover no-repeat;
   color: var(--color-white);
 }
 
