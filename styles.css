@@ -224,9 +224,7 @@ p {
   min-height: 100svh;
   display: grid;
   align-items: center;
-  background:
-    linear-gradient(rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.62)),
-    url("novint1.jpeg") center/cover no-repeat;
+  background: url("novint1.jpeg") 54% center / cover no-repeat;
   color: var(--color-white);
 }
 
@@ -234,8 +232,9 @@ p {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 20% 20%, rgba(216, 186, 140, 0.22), transparent 32%),
-    linear-gradient(180deg, rgba(10, 10, 10, 0.15), rgba(10, 10, 10, 0.55));
+    linear-gradient(90deg, rgba(11, 11, 11, 0.48) 0%, rgba(11, 11, 11, 0.24) 38%, rgba(11, 11, 11, 0.08) 100%),
+    linear-gradient(180deg, rgba(10, 10, 10, 0.1) 0%, rgba(10, 10, 10, 0.2) 100%),
+    radial-gradient(circle at 22% 18%, rgba(216, 186, 140, 0.16), transparent 30%);
 }
 
 .hero-content {
@@ -243,6 +242,7 @@ p {
   padding-top: calc(var(--header-height) + 3rem);
   padding-bottom: 4rem;
   max-width: 42rem;
+  text-shadow: 0 10px 26px rgba(0, 0, 0, 0.22);
 }
 
 .hero-copy {
@@ -632,6 +632,17 @@ p {
     padding: 6.5rem 0;
   }
 
+  .hero {
+    background-position: center 44%;
+  }
+
+  .hero-overlay {
+    background:
+      linear-gradient(90deg, rgba(11, 11, 11, 0.42) 0%, rgba(11, 11, 11, 0.18) 42%, rgba(11, 11, 11, 0.05) 100%),
+      linear-gradient(180deg, rgba(10, 10, 10, 0.08) 0%, rgba(10, 10, 10, 0.16) 100%),
+      radial-gradient(circle at 22% 18%, rgba(216, 186, 140, 0.14), transparent 30%);
+  }
+
   .site-nav {
     position: static;
     display: flex;
@@ -671,6 +682,17 @@ p {
 }
 
 @media (min-width: 1024px) {
+  .hero {
+    background-position: center 48%;
+  }
+
+  .hero-overlay {
+    background:
+      linear-gradient(90deg, rgba(11, 11, 11, 0.36) 0%, rgba(11, 11, 11, 0.14) 40%, rgba(11, 11, 11, 0.04) 100%),
+      linear-gradient(180deg, rgba(10, 10, 10, 0.06) 0%, rgba(10, 10, 10, 0.14) 100%),
+      radial-gradient(circle at 24% 18%, rgba(216, 186, 140, 0.12), transparent 30%);
+  }
+
   .hero-content {
     padding-bottom: 5rem;
   }
